@@ -16,14 +16,13 @@ The Book Notes App is a full-stack CRUD application designed for managing book n
 - CSS for styling
 - JavaScript for client-side interactivity
 
-## Folder Structure
-```
 book-notes-app
 ├── public
 │   ├── css
 │   │   └── styles.css
 │   ├── js
 │   │   └── scripts.js
+│   └── images  # <-- Added for storing images
 ├── views
 │   ├── layouts
 │   │   └── main.ejs
@@ -38,7 +37,10 @@ book-notes-app
 │       └── footer.ejs
 ├── app.js
 ├── package.json
-└── README.md
+├── README.md
+├── .gitignore  # <-- Added for ignoring unnecessary files
+└── .envmock  # <-- Added for environment variables setup
+
 ```
 
 ## Installation
