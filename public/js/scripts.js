@@ -11,6 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Auto-scroll to the bottom of the book list when coming from add page
+    if (window.location.pathname === '/books' && document.referrer.includes('/books/add')) {
+        const bookList = document.querySelector('.book-list');
+        if (bookList) {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    }
+
     // Star Rating System
     const ratingInput = document.getElementById('rating');
     const ratingStars = document.querySelectorAll('.rating-stars i');

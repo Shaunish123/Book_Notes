@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 // Fetch books and associated covers/authors from database
 app.get('/books', async (req, res) => {
     try {
-        const result = await db.query('SELECT * FROM books');
+        const result = await db.query('SELECT * FROM books ORDER BY id ASC');
         const books = result.rows;
 
         // Fetch covers and author photos
