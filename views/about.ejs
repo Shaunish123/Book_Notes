@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Book Tracker</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+
+    <main class="container">
+        <div class="about-container">
+            <div class="technologies-section">
+                <h1>Technologies Used in This Project</h1>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fas fa-code"></i> EJS Templates</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li><i class="fab fa-node-js"></i> Node.js</li>
+                            <li><i class="fab fa-node-js"></i> Express.js</li>
+                            <li><i class="fas fa-database"></i> PostgreSQL</li>
+                            <li><i class="fas fa-terminal"></i> Axios (for API calls)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Tools & Libraries</h3>
+                        <ul>
+                            <li><i class="fab fa-git-alt"></i> Git</li>
+                            <li><i class="fab fa-github"></i> GitHub</li>
+                            <li><i class="fab fa-npm"></i> NPM</li>
+                            <li><i class="fas fa-code-branch"></i> RESTful APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-hero">
+                <h2>About This Project</h2>
+                <div class="project-description">
+                    <p>
+                        <strong>Book Tracker</strong> is a full-stack CRUD web application that allows users to track books they’ve read, including ratings, reviews, and cover images. It was built using Node.js, Express.js, and EJS.
+                    </p>
+                    <p>
+                        Users can:
+                    </p>
+                    <ul>
+                        <li>Add and store book details including author, title, rating, review, and read date</li>
+                        <li>Edit and delete entries</li>
+                        <li>Search and sort books efficiently</li>
+                        <li>View book cover images fetched using Axios and public APIs</li>
+                    </ul>
+                    <p>
+                        I have used PostgreSQL in this project to store and manage book data such as titles, authors, ratings, reviews, and read dates in a structured relational database.
+                        The app uses Axios for backend API calls and dynamically renders pages with EJS templates.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-hero">
+                <h2>About Me</h2>
+                <div class="profile-section">
+                    <h3>Shaunish Sharma – Passionate Coder & Problem Solver</h3>
+                    <div class="about-content">
+                        <p>
+                            I'm Shaunish Sharma from India, currently studying web development and expanding my coding expertise. I thrive on solving complex problems with a mix of creativity and logic. Charismatic, funny, and outspoken, I bring energy and strong communication skills to any team.
+                        </p>
+                        <p>
+                            My passion for technology drives me to constantly learn and push boundaries, aiming to build impactful and user-friendly digital experiences. I approach challenges with determination, always seeking the most efficient and innovative solutions.
+                        </p>
+                        <p>
+                            With a sharp problem-solving mindset and a willingness to adapt, I enjoy exploring new technologies and refining my skills. Whether working independently or collaborating with others, I bring enthusiasm, critical thinking, and a strong work ethic to everything I do.
+                        </p>
+                    </div>
+
+                    <div class="contact-section">
+                        <h3>Contact Me</h3>
+                        <p class="email"><i class="fas fa-envelope"></i> shaunishs@gmail.com</p>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons-about">
+                            <a href="https://github.com/Shaunish123" class="social-link github">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/shaunish-sharma123/" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/_.shaunish._" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+                            <a href="https://leetcode.com/u/Shaunish_Sharma/" class="social-link leetcode">
+                                <i class="fas fa-code"></i>
+                                LeetCode
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include("partials/footer") -%>
+</body>
+</html>
+

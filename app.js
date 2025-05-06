@@ -158,6 +158,10 @@ app.post("/books/delete/:id", async(req, res) => {
     }
 });
 
+app.get("/books/about", (req,res)=>{
+    res.render('about');
+})
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

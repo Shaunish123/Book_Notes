@@ -2,7 +2,7 @@
 <%- include('partials/navbar') %>
 
 <div class="container">
-    <h1>Edit Book</h1>
+    <h1 style="margin-bottom: 20px; display: inline-block; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none;  text-shadow: 2px 2px 4px rgb(0, 0, 0); padding: 8px; border-radius: 5px;">Edit Book</h1>
 
     <form action="/books/edit/<%= book.id %>?_method=PUT" method="POST">
         <div class="form-group">
